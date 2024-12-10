@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waar zie ik mezelf?</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <header>
+    <h1>Home</h1>
+    </header>
+
+</head>
+<body>
+    <article>
+    <h1>Technishe skills</h1>
+
+    <li>Photoshop</li>      <p>Ik hoop voor mezelf dat ik hiermee kan werken, maar voor het werk wat ik wil doen valt het mee hoeveel ik eraan heb.</p>
+    <li>HTML CSS</li>       <p>Ik wil dit helemaal onder de knie hebben als ik klaar ben met deze opleiding</p>
+    <li>Javascript</li>     <p>Ik wil dit ook helemaal kunnen als ik deze opleiding heb afgerond</p>
+    <li>Csharp</li>         <p>Ja dit wil ik ook kunnen</p>
+    <li>Adobe XD</li>       <p>Ik wil dit net als Photoshop voor mezelf gewoon kunnen</p>
+
+    <h1>Mijn softskills straks</h1>
+
+    <li>Presenteren zonder stress</li> <p></p>
+    <li>Teamwork en communicatie</li>   <p></p>
+    <li>Creativiteit en probleemoplossend vermogen</li> <p></p>
+    <li>Leiderschap en planning</li>    <p></p>
+
+    <h1>Wat wil ik bereikt hebben</h1>
+
+    <p>Ik wil geld verdient hebben en ik wil goed genoeg kunnen programeren om ergens te kunnen werken.</p>
+    <p>Ik wil eigenlijk al een beetje klanten hebben of iets wat er in de buurt komt, misschien connecties in welk werkveld dan ook</p>
+
+    <h1>Mijn droombaan dagboek</h1>
+
+    <p>"Ik werk als software developer voor mezelf.</p>
+    <p>Ik ben heel vrij en kan gaan en staan waar ik wil.</p>
+    <p>Het is nogsteeds niet de heledag niks doen want ik moet nogsteeds elke dag werken.</p>
+    <p>Het feit dat ik het vanaf huis of waar dan ook kan doen maakt het allemaal zoveel beter."</p>
+
+
+    <h1>Een andere droom</h1>
+
+    <p>Mijn andere droom is artiest worden of producer het liefst allebei.</p>
+    <p>Natuurlijk is dat een vrij onrealistische droom, maar daar zijn dromen voor.</p>
+    <p>Het ligt aan jezelf of je de droom nogsteeds waar gaat maken.</p>
+   
+
+
+
+    <h1>Dromen, kansen en feiten</h1>
+
+    <p>Mijn droom is om een artiest te worden die ook software doet. Ik wil vrij zijn in m'n werk.</p>
+    <p>Ik wil ook producen voor artiesten en voor mezelf.</p>
+    <p>Ik probeer deze dromen ook te volgen zodat het kansen worden en geen dromen meer.</p>
+    <p>Ik blijf m'n dromen volgen totdat ze lukken of dat ik een hele goede reden krijg om te stoppen met mijn dromen volgen.</p>
+    <p>De feiten zijn dat als ik dit echt wil dat ik ervoor moet strijden, want dit gaat niet zomaar op m'n bord vallen.</p>
+
+
+
+
+
+    
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slide fade">
+          <img src="img/studio.jpg" alt="Foto 1">
+          <div class="caption">Dit zijn m'n dromen</div>
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="slide fade">
+          <img src="img/SD-A.jpg" alt="Foto 2">
+          <div class="caption">Dit zijn m'n dromen</div>
+        </div>
+    
+        <!-- Navigatieknoppen -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+    
+      <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+    
+        function changeSlide(n) {
+          showSlides((slideIndex += n));
+        }
+    
+        function showSlides(n) {
+          const slides = document.querySelectorAll('.slide');
+          if (n >= slides.length) slideIndex = 0;
+          if (n < 0) slideIndex = slides.length - 1;
+          slides.forEach(slide => (slide.style.display = 'none'));
+          slides[slideIndex].style.display = 'block';
+        }
+      </script>
+
+    </article>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* Header */
+header {
+    background-color: rgb(51, 160, 153); /* Donkere achtergrond */
+    color: white;                     /* Witte tekst */
+    padding: 20px;                    /* Ruimte binnen de header */
+    text-align: center;               /* Content gecentreerd */
+    position: fixed;                  /* Header blijft bovenaan */
+    top: 0;                           /* Vast aan de bovenkant */
+    left: 0;                          /* Vast aan de linkerkant */
+    width: 100%;                      /* Over hele breedte */
+    z-index: 10;                      /* Voorkomt dat andere elementen eroverheen komen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Schaduw voor zichtbaarheid */
+}
+
+/* Algemene body */
+body {
+    font-family: Arial, sans-serif;   /* Fontstijl */
+    margin: 0;                        /* Geen standaardmarges */
+    padding: 0;                       /* Geen padding */
+    background-color: #bbbbbb;       /* Roze achtergrondkleur */
+    display: flex;                    /* Flexbox voor uitlijning */
+    flex-direction: column;           /* Elementen onder elkaar */
+    align-items: center;              /* Centreert alles horizontaal */
+    padding-top: 120px;               /* Ruimte voor de header */
+}
+
+/* Algemene styling voor h1 */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;              /* Ruimte onder de titel */
+    text-align: center;               /* Tekst centreren */
+}
+
+/* Artikel */
+article {
+    background: #fff;                 /* Witte achtergrond */
+    border-radius: 10px;              /* Ronde hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schaduw */
+    padding: 20px;                    /* Binnenruimte */
+    max-width: 800px;                 /* Maximale breedte */
+    margin: 20px;                     /* Ruimte rondom */
+    text-align: left;                 /* Tekst uitlijnen naar links */
+    line-height: 1.6;                 /* Regelhoogte voor leesbaarheid */
+}
+
+/* Lijstitems */
+article li {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 15px;              /* Ruimte onder paragrafen */
+    color: #333;                      /* Donkere tekstkleur */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;                /* Marges om de slideshow te centreren */
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Slideshow slides */
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Caption */
+.caption {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Navigatieknoppen */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade-effect voor slides */
+.fade {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
